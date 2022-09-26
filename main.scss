@@ -134,4 +134,54 @@ nav {
     background-size: cover;
     background-position: center;
 
+    .section__text {
+        color: white;
+        margin-left: 10vw;
+        margin-top: 100px;
+        width: 84%;
+
+        h2 {
+            font-size: 62px;
+
+            span {
+                border-bottom: 8px #1C5BFF solid;
+            }
+        }
+
+        p {
+            margin: 30px 0;
+        }
+
+        button {
+
+            padding: 13px 40px;
+            border-radius: 28px;
+            border: none;
+        }
+    }
+
+
+
+}
+
+.section__two {
+    color: white;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 0;
+
+    h2 {
+        margin-bottom: 10px;
+        padding-bottom: 3px;
+        border-bottom: 5px solid black;
+    }
+
+    ul {
+        margin-top: 30px;
+
+        li {
+            margin: 0 50px;
+        }
+    }
 }

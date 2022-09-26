@@ -129,3 +129,47 @@ nav .nav__links li {
   background-size: cover;
   background-position: center;
 }
+.section__one .section__text {
+  color: white;
+  margin-left: 10vw;
+  margin-top: 100px;
+  width: 84%;
+}
+.section__one .section__text h2 {
+  font-size: 62px;
+}
+.section__one .section__text h2 span {
+  border-bottom: 8px #1C5BFF solid;
+}
+.section__one .section__text p {
+  margin: 30px 0;
+}
+.section__one .section__text button {
+  padding: 13px 40px;
+  border-radius: 28px;
+  border: none;
+}
+
+.section__two {
+  color: white;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 60px 0;
+}
+.section__two h2 {
+  margin-bottom: 10px;
+  padding-bottom: 3px;
+  border-bottom: 5px solid black;
+}
+.section__two ul {
+  margin-top: 30px;
+}
+.section__two ul li {
+  margin: 0 50px;
+}

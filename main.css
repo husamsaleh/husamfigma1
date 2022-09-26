@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+:root {
+  --main-color: white;
+  --second-color: black;
+  --third-color: #1C5BFF;
+}
+
+* {
+  padding: 0%;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(235, 235, 235);
+  font-family: "Sora", sans-serif;
+}
+
+.df {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.jcsa {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.bg-f {
+  background-color: var(--main-color);
+}
+
+.bg-s {
+  background-color: var(--second-color);
+}
+
+.bg-t {
+  background-color: var(--third-color);
+}
+
+.aic {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mx-10 {
+  margin: auto 10px;
+}
+
+.mx-20 {
+  margin: auto 20px;
+}
+
+.mx-30 {
+  margin: auto 30px;
+}
+
+.px-10 {
+  padding: 0 10px;
+}
+
+.px-20 {
+  padding: 0 20px;
+}
+
+.px-30 {
+  padding: 0 30px;
+}
+
+.my-10 {
+  margin: 10px auto;
+}
+
+.my-20 {
+  margin: 20px auto;
+}
+
+.my-30 {
+  margin: 30px auto;
+}
+
+.py-10 {
+  padding: 10px 0;
+}
+
+.py-20 {
+  padding: 20px 0;
+}
+
+.py-30 {
+  padding: 30px 0;
+}
+
+nav .logo {
+  color: white;
+  font-size: 22px;
+  border-bottom: 4px #1C5BFF solid;
+}
+nav .nav__links {
+  color: white;
+}
+nav .nav__links a {
+  color: white;
+  margin: auto 20px;
+}
+nav .nav__links li {
+  margin: auto 5px;
+}
+
+.section__one {
+  background: rgba(0, 36, 125, 0.9490196078) url(./images/bg1.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

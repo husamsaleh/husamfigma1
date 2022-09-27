@@ -27,6 +27,7 @@ html {
 body {
   background: rgb(235, 235, 235);
   font-family: "Sora", sans-serif;
+  overflow-x: hidden;
 }
 
 .df {
@@ -251,4 +252,196 @@ nav .nav__links li {
 }
 .section__three .more_see a {
   color: white;
+}
+
+.section__four {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #252323;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section__four h2 {
+  margin: 50px 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 5px solid var(--third-color);
+}
+.section__four form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+.section__four form input,
+.section__four form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+}
+.section__four form input::-webkit-input-placeholder, .section__four form textarea::-webkit-input-placeholder {
+  color: rgb(199, 199, 199);
+}
+.section__four form input::-moz-placeholder, .section__four form textarea::-moz-placeholder {
+  color: rgb(199, 199, 199);
+}
+.section__four form input:-ms-input-placeholder, .section__four form textarea:-ms-input-placeholder {
+  color: rgb(199, 199, 199);
+}
+.section__four form input::-ms-input-placeholder, .section__four form textarea::-ms-input-placeholder {
+  color: rgb(199, 199, 199);
+}
+.section__four form input::placeholder,
+.section__four form textarea::placeholder {
+  color: rgb(199, 199, 199);
+}
+.section__four form button {
+  margin-top: 20px;
+  padding: 13px 40px;
+  border-radius: 28px;
+  border: none;
+  background-color: var(--third-color);
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.section__four .s4__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 50px 130px;
+}
+.section__four .section__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 200px;
+}
+.section__four .section__text p {
+  margin-top: 20px;
+}
+
+.footer .logo {
+  color: white;
+  font-size: 22px;
+  border-bottom: 4px #000000 solid;
+}
+.footer .nav__links {
+  color: white;
+}
+.footer .nav__links a {
+  color: white;
+  margin: auto 20px;
+}
+.footer .nav__links li {
+  margin: auto 5px;
+}
+
+@media screen and (max-width: 800px) {
+  nav,
+.footer {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  nav .nav__links,
+.footer .nav__links {
+    margin-top: 20px;
+  }
+
+  .section__one .section__text {
+    padding: 0px 0px 0px 20px;
+  }
+  .section__one .section__text h2 {
+    font-size: 32px;
+  }
+  .section__one .section__text h2 span {
+    border-bottom: 4px #1C5BFF solid;
+  }
+
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card img {
+    width: 250px;
+  }
+
+  .s4__container {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+
+  .section__text {
+    width: 100%;
+    margin-left: 0px !important;
+    margin-top: 100px;
+  }
+
+  .section__three .section__text p {
+    width: 251px;
+  }
+
+  .section__four .s4__container {
+    padding: 0;
+  }
+  .section__four .s4__container .section__text {
+    padding: 0 20px;
+    margin-bottom: 30px;
+  }
+
+  .footer .logo {
+    font-size: 15px;
+  }
+
+  .section__two {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 60px 0;
+  }
+  .section__two h2 {
+    margin-bottom: 10px;
+    border-bottom: 5px solid black;
+  }
+  .section__two ul {
+    margin-top: 60px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .section__two ul li {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin: 20px 0;
+  }
 }

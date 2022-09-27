@@ -18,10 +18,20 @@
 
 a {
     text-decoration: none;
+    transition: .4s all ease-in-out;
+
+
+}
+
+button {
+    transition: all ease-in-out .3s;
+    cursor: pointer;
 }
 
 li {
     list-style: none;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
 }
 
 html {
@@ -120,10 +130,18 @@ nav {
         a {
             color: white;
             margin: auto 20px;
+
+            &:hover {
+                color: gold;
+            }
         }
 
         li {
             margin: auto 5px;
+
+            &:hover {
+                color: gold;
+            }
         }
     }
 }
@@ -158,6 +176,11 @@ nav {
             padding: 13px 40px;
             border-radius: 28px;
             border: none;
+
+            &:hover {
+                background-color: gold;
+                color: #000000;
+            }
         }
     }
 
@@ -238,6 +261,11 @@ nav {
                 padding: 13px 40px;
                 border-radius: 28px;
                 border: none;
+
+                &:hover {
+                    background-color: gold;
+                    color: #000000;
+                }
             }
         }
     }
@@ -304,6 +332,11 @@ nav {
 
             color: white;
             width: fit-content;
+
+            &:hover {
+                background-color: gold;
+                color: #000000;
+            }
         }
     }
 
@@ -341,10 +374,18 @@ nav {
         a {
             color: white;
             margin: auto 20px;
+
+            &:hover {
+                color: gold;
+            }
         }
 
         li {
             margin: auto 5px;
+
+            &:hover {
+                color: gold;
+            }
         }
     }
 }

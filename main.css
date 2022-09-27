@@ -14,10 +14,21 @@
 
 a {
   text-decoration: none;
+  -webkit-transition: 0.4s all ease-in-out;
+  transition: 0.4s all ease-in-out;
+}
+
+button {
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
 }
 
 li {
   list-style: none;
+  cursor: pointer;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 
 html {
@@ -119,8 +130,14 @@ nav .nav__links a {
   color: white;
   margin: auto 20px;
 }
+nav .nav__links a:hover {
+  color: gold;
+}
 nav .nav__links li {
   margin: auto 5px;
+}
+nav .nav__links li:hover {
+  color: gold;
 }
 
 .section__one {
@@ -149,6 +166,10 @@ nav .nav__links li {
   padding: 13px 40px;
   border-radius: 28px;
   border: none;
+}
+.section__one .section__text button:hover {
+  background-color: gold;
+  color: #000000;
 }
 
 .section__two {
@@ -242,6 +263,10 @@ nav .nav__links li {
   border-radius: 28px;
   border: none;
 }
+.section__three .card .cards__text button:hover {
+  background-color: gold;
+  color: #000000;
+}
 .section__three .more_see {
   color: white;
   text-align: center;
@@ -320,6 +345,10 @@ nav .nav__links li {
   width: -moz-fit-content;
   width: fit-content;
 }
+.section__four form button:hover {
+  background-color: gold;
+  color: #000000;
+}
 .section__four .s4__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -358,8 +387,14 @@ nav .nav__links li {
   color: white;
   margin: auto 20px;
 }
+.footer .nav__links a:hover {
+  color: gold;
+}
 .footer .nav__links li {
   margin: auto 5px;
+}
+.footer .nav__links li:hover {
+  color: gold;
 }
 
 @media screen and (max-width: 800px) {

@@ -16,9 +16,9 @@
                 <h1>Pav</h1>
             </div>
                 <div class="nav__links df">
-                    <a href="#About">About</a>
-                    <a href="#Works">Works</a>
-                    <a href="#About">Contact</a>
+                    <a href="#about">About</a>
+                    <a href="#work">Works</a>
+                    <a href="#Contact">Contact</a>
                     <ul class="df mx-10 ">
                         <li><i class="fab fa-twitter"></i></li>
                         <li><i class="fab fa-linkedin-in"></i></li>
@@ -32,9 +32,9 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nulla cursus aliquet pretium. </p>
             <button>Let's talk </button>
         </div>
-
+        <div class="bg-overlay"></div>
     </div>
-    <div class="section__two aic bg-t df">
+    <div class="section__two aic bg-t df" id="about">
         <h2>Clients</h2>
         <p>Check out some of my previous clients</p>
         <ul class="df aic ">
@@ -47,7 +47,7 @@
 
     <!-- cards(projects) section -->
     <div class="section__three">
-        <div class="section__text">
+        <div class="section__text" id="work">
             <h2>Works</h2>
             <p>See my recent Projects below</p>
         </div>
@@ -98,7 +98,7 @@
 
         <h2>Contact me </h2>
 
-        <div class="s4__container">
+        <div class="s4__container" id="Contact">
 
             
                 <form action="">
@@ -122,9 +122,9 @@
             <h1>Pav</h1>
         </div>
             <div class="nav__links df">
-                <a href="#About">About</a>
-                <a href="#Works">Works</a>
-                <a href="#About">Contact</a>
+                <a href="#about">About</a>
+                <a href="#work">Works</a>
+                <a href="#Contact">Contact</a>
                 <ul class="df mx-10 ">
                     <li><i class="fab fa-twitter"></i></li>
                     <li><i class="fab fa-linkedin-in"></i></li>
@@ -133,5 +133,48 @@
             </div>
         
     </footer>
+    <button onclick="topFunction()" id="totoppls" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <script>
+        
+//Get the button:
+mybutton = document.getElementById("totoppls");
+btnzswitch = document.getElementById("modeSwitcher");
+
+
+
+
+
+if (window.innerWidth > 601) {
+  function scrollFunction() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      mybutton.style.display = "block";
+      btnzswitch.style.display = "flex";
+    } else {
+      mybutton.style.display = "none";
+      btnzswitch.style.display = "none";
+    }
+  }
+  window.onscroll = function () { scrollFunction() };
+}
+if (window.innerWidth < 600) {
+  function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      mybutton.style.display = "block";
+      btnzswitch.style.display = "flex";
+    } else {
+      mybutton.style.display = "none";
+      btnzswitch.style.display = "none";
+    }
+  }
+  window.onscroll = function () { scrollFunction() };
+}
+
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+    </script>
 </body>
 </html>
